@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="orange">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fajar Heryanto — Freelance Developer & Designer</title>
+  <meta name="description" content="Freelance Developer & Designer crafting digital experiences.">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='80'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-text">Loading Portfolio</div>
+    <div class="loading-bar"><div class="loading-bar__fill"></div></div>
+  </div>
+
+  <div class="custom-cursor"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="corner-letter corner-tl">F</div>
+    <div class="corner-letter corner-tr">H</div>
+    <div class="corner-letter corner-bl">D</div>
+    <div class="corner-letter corner-br">V</div>
+    <div class="center-nav">
+      <div class="center-nav__inner">
+        <button class="center-nav__icon" aria-label="Code"><span>&gt;|&lt;</span></button>
+        <div class="center-nav__dots">
+          <span class="center-dot theme-dot--orange active" data-theme="orange"></span>
+          <span class="center-dot theme-dot--pink" data-theme="pink"></span>
+          <span class="center-dot theme-dot--purple" data-theme="purple"></span>
+          <span class="center-dot center-dot--white" data-theme="orange"></span>
+          <span class="center-dot center-dot--dim" data-theme="purple"></span>
+        </div>
+        <button class="center-nav__menu menu-toggle" id="menu-toggle" aria-label="Menu"><span class="label">Menu</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <div class="site-nav__overlay" id="nav-overlay"></div>
+  <nav class="site-nav" id="site-nav">
+    <div class="site-nav__links">
+      <div class="nav-item" data-index="01" data-target="#about"><span>About</span></div>
+      <div class="nav-item" data-index="02" data-target="#projects"><span>Projects</span></div>
+      <div class="nav-item" data-index="03" data-target="#experience"><span>Experience</span></div>
+      <div class="nav-item" data-index="04" data-target="#contact"><span>Contact</span></div>
+    </div>
+    <div class="theme-switcher">
+      <div class="theme-dot theme-dot--orange active" data-theme="orange"></div>
+      <div class="theme-dot theme-dot--pink" data-theme="pink"></div>
+      <div class="theme-dot theme-dot--purple" data-theme="purple"></div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__ascii-fullscreen"><canvas id="hero-ascii-canvas"></canvas></div>
+    <div class="hero__scanline"></div>
+    <div class="hero__bottom-bar">
+      <div class="hero__bottom-left"><span class="status-dot"></span><span class="label">Available for work</span></div>
+      <div class="hero__bottom-center"><span class="label">Freelance Developer &amp; Designer</span></div>
+      <div class="hero__bottom-right"><span class="label">Scroll ↓</span></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section__label" data-index="01"><span>About</span></div>
+      <div class="about__grid">
+        <div class="about__text-col reveal">
+          <p class="about__text">I'm a <span class="accent">freelance developer &amp; designer</span> who turns ideas into polished, high-performance digital products. I obsess over <span class="accent">clean code</span>, thoughtful <span class="accent">UI/UX</span>, and the tiny details that make experiences feel alive.</p>
+          <p class="about__text-secondary">With 5+ years of experience building for startups, agencies, and brands, I bring a full-spectrum approach — from concept and design to deployment and optimization.</p>
+        </div>
+        <div class="about__skills-col reveal reveal-delay-2">
+          <div class="skills-group">
+            <h3 class="skills-group__title">Development</h3>
+            <div class="skills-tags">
+              <span class="skill-tag">React</span><span class="skill-tag">Next.js</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Node.js</span><span class="skill-tag">Python</span><span class="skill-tag">Vue.js</span>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3 class="skills-group__title">Design</h3>
+            <div class="skills-tags">
+              <span class="skill-tag">Figma</span><span class="skill-tag">UI/UX</span><span class="skill-tag">Motion</span><span class="skill-tag">Branding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__stats reveal">
+        <div class="stat"><div class="stat__number" data-target="50" data-suffix="+">0</div><div class="stat__label">Projects</div></div>
+        <div class="stat"><div class="stat__number" data-target="5" data-suffix="+">0</div><div class="stat__label">Years Exp.</div></div>
+        <div class="stat"><div class="stat__number" data-target="30" data-suffix="+">0</div><div class="stat__label">Happy Clients</div></div>
+        <div class="stat"><div class="stat__number" data-target="99" data-suffix="%">0</div><div class="stat__label">Satisfaction</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__label" data-index="02"><span>Projects</span></div>
+      <div class="projects__featured reveal">
+        <div class="featured-project">
+          <div class="featured-project__image"><canvas id="featured-project-canvas"></canvas></div>
+          <div class="featured-project__info">
+            <h2 class="featured-project__title">E-Commerce Platform</h2>
+            <p class="featured-project__desc">A full-stack e-commerce solution with real-time inventory, payment processing, and a custom CMS.</p>
+            <div class="featured-project__tech"><span class="skill-tag">Next.js</span><span class="skill-tag">Stripe</span><span class="skill-tag">PostgreSQL</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="projects__grid">
+        <div class="portfolio-card reveal" data-category="web"><div class="portfolio-card__image"><canvas class="portfolio-card__canvas"></canvas></div><div class="portfolio-card__content"><h3 class="portfolio-card__title">Dashboard App</h3><p class="portfolio-card__desc">Analytics dashboard with real-time data visualization</p></div></div>
+        <div class="portfolio-card reveal reveal-delay-1" data-category="design"><div class="portfolio-card__image"><canvas class="portfolio-card__canvas"></canvas></div><div class="portfolio-card__content"><h3 class="portfolio-card__title">Brand Identity</h3><p class="portfolio-card__desc">Complete brand identity system for a fintech startup</p></div></div>
+        <div class="portfolio-card reveal reveal-delay-2" data-category="web"><div class="portfolio-card__image"><canvas class="portfolio-card__canvas"></canvas></div><div class="portfolio-card__content"><h3 class="portfolio-card__title">Social Platform</h3><p class="portfolio-card__desc">Community platform with real-time messaging</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section__label" data-index="03"><span>Experience</span></div>
+      <div class="timeline">
+        <div class="timeline__item reveal"><div class="timeline__date">2023 — Present</div><div class="timeline__content"><h3 class="timeline__title">Senior Freelance Developer</h3><p class="timeline__company">Independent</p><p class="timeline__desc">Building custom web applications and design systems for international clients.</p></div></div>
+        <div class="timeline__item reveal reveal-delay-1"><div class="timeline__date">2021 — 2023</div><div class="timeline__content"><h3 class="timeline__title">Full-Stack Developer</h3><p class="timeline__company">Tech Startup</p><p class="timeline__desc">Led front-end architecture and built scalable APIs for a growing SaaS platform.</p></div></div>
+        <div class="timeline__item reveal reveal-delay-2"><div class="timeline__date">2019 — 2021</div><div class="timeline__content"><h3 class="timeline__title">Junior Developer</h3><p class="timeline__company">Digital Agency</p><p class="timeline__desc">Developed responsive websites and interactive experiences for diverse clients.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="cta section" id="contact">
+    <div class="container">
+      <div class="cta__content reveal">
+        <div class="section__label" data-index="04" style="justify-content:center;"><span>Contact</span></div>
+        <h2 class="cta__title">Let's Talk</h2>
+        <p class="cta__desc">Got a project in mind? Let's build something great together.</p>
+        <a href="mailto:fajarheryantosaputra@gmail.com" class="cta__button"><span>Send me an email</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Text -->
+  <section class="scroll-text-section" id="scroll-text">
+    <div class="scroll-text__inner">
+      <div class="scroll-text__line scroll-reveal-text">FREELANCE</div>
+      <div class="scroll-text__line scroll-reveal-text">DEVELOPER</div>
+      <div class="scroll-text__line scroll-reveal-text accent-text">&amp; DESIGNER</div>
+    </div>
+  </section>
+
+  <!-- 3D Dragon -->
+  <section class="dragon-3d-section" id="dragon-3d">
+    <div class="dragon-3d__canvas-wrap"><canvas id="dragon-3d-canvas"></canvas></div>
+    <div class="dragon-3d__label"><span class="label" style="color:var(--theme-accent);">05</span><span class="label">CRAFTED WITH CODE</span></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__left"><div class="footer__logo">FH.</div><div class="footer__copy">© 2025 Fajar Heryanto. All rights reserved.</div></div>
+        <div class="footer__links"><a href="#about" class="footer__link">About</a><a href="#projects" class="footer__link">Projects</a><a href="#experience" class="footer__link">Experience</a><a href="#contact" class="footer__link">Contact</a></div>
+      </div>
+      <div class="footer__bottom"><div class="label text-muted">Designed &amp; built by hand ✦</div></div>
+    </div>
+  </footer>
+
+  <script src="js/ascii-renderer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
